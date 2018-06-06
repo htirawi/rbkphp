@@ -6,7 +6,43 @@ $email    = "";
 $errors = array();
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', 'admin', 'rbktask');
+// $db = mysqli_connect('localhost', 'root', 'admin', 'rbktask');
+
+$db = mysqli_connect('us-cdbr-iron-east-04.cleardb.net', 'b4013bc98f6778', '025f4fda', 'heroku_816716d2ed3356f');
+
+
+
+// //Get Heroku ClearDB connection information
+// $cleardb_url      = parse_url(getenv("CLEARDB_DATABASE_URL"));
+// $cleardb_server   = $cleardb_url["us-cdbr-iron-east-04.cleardb.net"];
+// $cleardb_username = $cleardb_url["b4013bc98f6778"];
+// $cleardb_password = $cleardb_url["025f4fda"];
+// $cleardb_db       = substr($cleardb_url["heroku_816716d2ed3356f"],1);
+//
+// $active_group = 'default';
+// $query_builder = TRUE;
+//
+// $db['default'] = array(
+//     'dsn'   => '',
+//     'hostname' => $cleardb_server,
+//     'username' => $cleardb_username,
+//     'password' => $cleardb_password,
+//     'database' => $cleardb_db,
+//     'dbdriver' => 'mysqli',
+//     'dbprefix' => '',
+//     'pconnect' => FALSE,
+//     'db_debug' => (ENVIRONMENT !== 'production'),
+//     'cache_on' => FALSE,
+//     'cachedir' => '',
+//     'char_set' => 'utf8',
+//     'dbcollat' => 'utf8_general_ci',
+//     'swap_pre' => '',
+//     'encrypt' => FALSE,
+//     'compress' => FALSE,
+//     'stricton' => FALSE,
+//     'failover' => array(),
+//     'save_queries' => TRUE
+// );ask');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
