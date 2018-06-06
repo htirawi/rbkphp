@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2018 at 08:39 PM
+-- Generation Time: Jun 06, 2018 at 10:32 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 7.2.5
 
@@ -30,10 +30,18 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `photos` (
   `id` int(10) UNSIGNED NOT NULL,
-  `caption` varchar(50) DEFAULT NULL,
-  `img` longblob NOT NULL,
-  `name` varchar(50) NOT NULL
+  `image_text` text,
+  `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `photos`
+--
+
+INSERT INTO `photos` (`id`, `image_text`, `image`) VALUES
+(1, '', '34493116_2243116895703385_5044439093446967296_n.jpg'),
+(2, 'good', ''),
+(3, 'good', '');
 
 -- --------------------------------------------------------
 
@@ -92,7 +100,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
