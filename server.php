@@ -6,9 +6,9 @@ $email    = "";
 $errors = array();
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', 'admin', 'rbktask');
+// $db = mysqli_connect('localhost', 'root', 'admin', 'rbktask');
 
-// $db = mysqli_connect('us-cdbr-iron-east-04.cleardb.net', 'b4013bc98f6778', '025f4fda', 'heroku_816716d2ed3356f');
+$db = mysqli_connect('us-cdbr-iron-east-04.cleardb.net', 'b4013bc98f6778', '025f4fda', 'heroku_816716d2ed3356f');
 
 
 
