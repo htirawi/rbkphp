@@ -1,4 +1,4 @@
-# rbkphp
+# RBK-PHP
 
 This application is a full stack web application using PHP, 
 It has a feature of upload photos, and after uploading the photos the user will have a link to share their photos.
